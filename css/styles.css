@@ -1,16 +1,7 @@
-/* основной цвет #212121 */
-/* вспомагательный цвет #757575 */
-/* белый #FFFFFF */
-/* акцент #2196F3 */
-/* цвет контактов rgba(255, 255, 255, 0.6) */
-/* цвет фона героя #2F303A */
-/* цвет вторичного фона #F5F4FA */
-/* raleway-regular - latin_cyrillic */
 html
 {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after
@@ -36,6 +27,8 @@ body
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -48,11 +41,29 @@ address
 {
   font-style: normal;
 }
+img 
+{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* styl nav */
-/* .page-header
+.page-header
 {
 background-color: #ccc;
-} */
+}
+.plus
+{
+  background-color: rosybrown;
+}
+.photo
+{
+  background-color: saddlebrown;
+}
+
+
+
 
 .container
 {
@@ -150,6 +161,10 @@ color: var(--accent-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section.plus
+{
+  padding-bottom: 0;
+}
 .section-title
 {
   margin-top: 0;
@@ -161,7 +176,18 @@ color: var(--accent-color);
   line-height: 1.16;
   text-align: center;
 }
-/* features */
+/* advantages */
+.visually-hidden 
+{
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .title 
 {
   margin-top: 0;
@@ -242,6 +268,15 @@ footer>.logo
 
 /* Portfolio.html */
 /* Tabs list */
+.filter
+{
+  background-color: salmon;
+}
+.examples
+{
+  background-color: skyblue;
+  padding-top: 0;
+}
 
 .tabs-link
 {
