@@ -14,6 +14,7 @@ html {
   --primayry-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
 }
+
 body {
   background-color: var(--primayry-white-color);
   color: var(--primayry-text-color);
@@ -53,11 +54,12 @@ img {
 }
 
 .container {
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1230px;
+
   outline: 2px solid black;
 }
 .list {
@@ -190,6 +192,7 @@ img {
   text-align: center;
 }
 /* advantages */
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -200,6 +203,7 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
+
 .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -209,24 +213,41 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .title-list {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
-
+.feature {
+  display: flex;
+}
+.feature-list {
+  width: 270px;
+}
+.feature-list:not(:last-child) {
+  margin-right: 30px;
+}
 /* work */
 .work {
   margin-bottom: 50px;
   color: var(--primayry-text-color);
 }
+.pictures {
+  display: flex;
+  justify-content: center;
+}
 
+.work-photo:not(:last-child) {
+  margin-right: 30px;
+}
 /* team */
 
 .section.team {
   background-color: var(--secondary-bg-color);
 }
 .team-list {
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
   color: var(--primayry-text-color);
@@ -235,6 +256,7 @@ img {
   line-height: 1.18;
 }
 .position {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 30px;
@@ -242,7 +264,21 @@ img {
   font-size: 16px;
   line-height: 1.87;
 }
+.teams {
+  display: flex;
+  justify-content: center;
+}
+.team .item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.teams .item:not(:last-child) {
+  margin-right: 30px;
+}
 /* footer */
+
 .address {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -250,13 +286,18 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
-footer > .logo {
+.address > .logo {
   color: var(--primayry-white-color);
 }
+
 .address-main {
+  margin-top: 20px;
+  margin-bottom: 9px;
   color: var(--primayry-white-color);
 }
 .address-link {
+  display: block;
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 .address-link:hover,
