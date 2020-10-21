@@ -134,10 +134,7 @@ img {
   outline: 2px solid red;
   background-color: #2f303a;
 }
-/* .hero-container {
-  width: 700px;
-  align-items: center;
-} */
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -150,6 +147,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .button {
   padding: 10px 32px;
   border-radius: 4px;
@@ -167,7 +165,13 @@ img {
   color: var(--accent-color);
   background-color: var(--primayry-white-color);
 }
-
+.hero-container {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  align-items: center;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
