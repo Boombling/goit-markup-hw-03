@@ -253,7 +253,9 @@ img {
 .section.team {
   background-color: var(--secondary-bg-color);
 }
-
+.icon {
+  display: flex;
+}
 .teams {
   display: flex;
   flex-wrap: wrap;
@@ -264,7 +266,6 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
-  width: 100%;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -309,27 +310,44 @@ img {
 }
 .address-link {
   display: block;
-  margin-bottom: 9px;
+  /* margin-bottom: 9px; */
   color: rgba(255, 255, 255, 0.6);
 }
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
 }
+.address-item {
+  display: block;
+  margin-bottom: 9px;
+}
+.address-link:not(:last-child) {
+  margin-bottom: 0;
+}
 
 /* Portfolio.html */
 /* Tabs list */
 .filter {
   background-color: salmon;
+  padding-bottom: 50px;
 }
 .examples {
   background-color: skyblue;
   padding-top: 0;
 }
+.filter-list {
+  text-align: center;
+}
+.filter-item {
+  display: inline-flex;
+  margin-right: 8px;
+}
 
 .tabs-link {
   color: var(--primayry-text-color);
   background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -345,6 +363,7 @@ img {
 .work-list {
   margin-top: 20px;
   margin-bottom: 4px;
+  text-align: center;
   color: var(--primayry-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -354,7 +373,19 @@ img {
 .work-info {
   margin-top: 0;
   margin-bottom: 20px;
+  text-align: center;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+.practics-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.practics-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
