@@ -43,24 +43,12 @@ img {
 }
 
 /* styl nav */
-.page-header {
-  background-color: #ccc;
-}
-.plus {
-  background-color: rosybrown;
-}
-.photo {
-  background-color: saddlebrown;
-}
-
 .container {
   width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 2px solid black;
 }
 .list {
   padding: 0;
@@ -132,7 +120,6 @@ img {
 
 /* hero */
 .hero {
-  outline: 2px solid red;
   background-color: #2f303a;
 }
 
@@ -328,11 +315,9 @@ img {
 /* Portfolio.html */
 /* Tabs list */
 .filter {
-  background-color: salmon;
   padding-bottom: 50px;
 }
 .examples {
-  background-color: skyblue;
   padding-top: 0;
 }
 .filter-list {
