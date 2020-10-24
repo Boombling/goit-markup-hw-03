@@ -37,7 +37,7 @@ address {
   font-style: normal;
 }
 img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -345,10 +345,24 @@ img {
 }
 
 /* work list */
+.practics-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+}
+.practics-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
 .work-list {
   margin-top: 20px;
   margin-bottom: 4px;
-  text-align: center;
+  padding-left: 20px;
   color: var(--primayry-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -358,19 +372,8 @@ img {
 .work-info {
   margin-top: 0;
   margin-bottom: 20px;
-  text-align: center;
+  padding-left: 20px;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
-}
-.practics-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-.practics-item {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc(100% / 3 - 30px);
 }
