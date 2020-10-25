@@ -44,7 +44,7 @@ img {
 
 /* styl nav */
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -61,15 +61,24 @@ img {
 }
 .logo {
   color: var(--primayry-text-color);
-  font-family: Raleway, cursive;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-web {
+
+/* .logo-web {
   color: var(--accent-color);
-}
+} */
 .site-nav {
   display: inline-flex;
   margin-left: 93px;
@@ -225,14 +234,15 @@ img {
 .photo-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: space-between;
 }
 
 .photo-item {
   margin-left: 30px;
-  margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+.photo-item:first-child {
+  margin-left: 0;
 }
 
 /* team */
@@ -240,24 +250,26 @@ img {
 .section.team {
   background-color: var(--secondary-bg-color);
 }
-.icon {
+/* .icon {
   display: flex;
-}
+} */
 .teams {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: space-between;
 }
+
 .team-item {
   margin-left: 30px;
-  margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-item:first-child {
+  margin-left: 0;
 }
 .team-list {
   text-align: center;
@@ -348,15 +360,23 @@ img {
 .practics-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
+  justify-content: space-between;
 }
 .practics-item {
-  margin-top: 30px;
+  width: 370px;
+  /* margin-top: 30px; */
   margin-left: 30px;
+  margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
 
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+.practics-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.practics-item:nth-child(3n + 1) {
+  margin-left: 0;
 }
 
 .work-list {
